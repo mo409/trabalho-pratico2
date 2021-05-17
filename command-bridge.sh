@@ -1,3 +1,5 @@
+#!/bin/sh
+
 cd mo409/
 mvn install
 cd ..
