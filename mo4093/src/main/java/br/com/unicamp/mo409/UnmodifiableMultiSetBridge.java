@@ -2,6 +2,7 @@ package br.com.unicamp.mo409;
 
 import org.apache.commons.collections4.MultiSet;
 import org.apache.commons.collections4.multiset.HashMultiSet;
+import org.apache.commons.collections4.multiset.UnmodifiableMultiSet;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -36,10 +37,6 @@ public class UnmodifiableMultiSetBridge {
 
     public boolean remove(Pessoa pessoa) {
         return unmodifiableMultiSet.remove(pessoa);
-    }
-
-    public boolean removeIf(final Predicate<Pessoa> filter) {
-        return unmodifiableMultiSet.removeIf(filter);
     }
 
     public boolean removeAll(final Collection<Pessoa> coll) {

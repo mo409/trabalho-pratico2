@@ -1,0 +1,257 @@
+[
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "iterator",
+      "parameterTypes": []
+    },
+    "identifiers": {
+      "parameters": [],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      
+    ],
+    "post": [
+        {
+            "guard": {
+                "condition": "true",
+                "description": ""
+            },
+            "property": {
+                "condition": "result != null",
+                "description": "received value is non-null"
+            },
+            "description": "return a non-null iterator"
+        }
+    ],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "add",
+      "parameterTypes": [ "br.com.unicamp.mo409.Pessoa" ]
+    },
+    "identifiers": {
+      "parameters": [ "pessoa" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "addAll",
+      "parameterTypes": [ "java.util.Collection" ]
+    },
+    "identifiers": {
+      "parameters": [ "coll" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "clear",
+      "parameterTypes": []
+    },
+    "identifiers": {
+      "parameters": [],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "remove",
+      "parameterTypes": [ "br.com.unicamp.mo409.Pessoa" ]
+    },
+    "identifiers": {
+      "parameters": [ "pessoa" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "removeAll",
+      "parameterTypes": [ "java.util.Collection" ]
+    },
+    "identifiers": {
+      "parameters": [ "coll" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "retainAll",
+      "parameterTypes": [ "java.util.Collection" ]
+    },
+    "identifiers": {
+      "parameters": [ "coll" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "setCount",
+      "parameterTypes": [ "br.com.unicamp.mo409.Pessoa", "int" ]
+    },
+    "identifiers": {
+      "parameters": [ "pessoa",  "count" ],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      {
+        "exception": "java.lang.UnsupportedOperationException",
+        "description": "throws UnsupportedOperationException if this method is executed",
+        "guard": {
+            "condition": "true",
+            "description": ""
+        }
+      }
+    ],
+    "post": [],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "uniqueSet",
+      "parameterTypes": []
+    },
+    "identifiers": {
+      "parameters": [],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      
+    ],
+    "post": [
+        {
+            "guard": {
+                "condition": "true",
+                "description": ""
+            },
+            "property": {
+                "condition": "result != null",
+                "description": "received value is non-null"
+            },
+            "description": "return a non-null uniqueSet"
+        }
+    ],
+    "pre": []
+  },
+  {
+    "operation": {
+      "classname": "br.com.unicamp.mo409.UnmodifiableMultiSetBridge",
+      "name": "entrySet",
+      "parameterTypes": []
+    },
+    "identifiers": {
+      "parameters": [],
+      "receiverName": "receiver",
+      "returnName": "result"
+    },
+    "throws": [
+      
+    ],
+    "post": [
+        {
+            "guard": {
+                "condition": "true",
+                "description": ""
+            },
+            "property": {
+                "condition": "result != null",
+                "description": "received value is non-null"
+            },
+            "description": "return a non-null entrySet"
+        }
+    ],
+    "pre": []
+  }
+]
