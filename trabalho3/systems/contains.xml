@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="contains">
+  <Parameters>
+    <Parameter id="0" name="objeto" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="objeto_existe_na_colecao" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text=" !(!objeto &amp;&amp; objeto_existe_na_colecao)">
+      <Parameters>
+        <Parameter name="objeto" />
+        <Parameter name="objeto_existe_na_colecao" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>objeto</Value>
+    <Value>objeto_existe_na_colecao</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.004</ExecutionTime>
+    <MaxDomainSize>2</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>3</TotalNoOfCombination>
+    <TotalNoOfTests>3</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+

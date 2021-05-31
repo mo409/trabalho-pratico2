@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="addAll">
+  <Parameters>
+    <Parameter id="0" name="colecao" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="permite_operacao" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="!permite_operacao">
+      <Parameters>
+        <Parameter name="permite_operacao" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+</System>
+

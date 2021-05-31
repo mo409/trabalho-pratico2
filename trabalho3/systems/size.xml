@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="size">
+  <Parameters>
+    <Parameter id="0" name="isEmpty" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="return" type="0">
+      <values>
+        <value>0</value>
+        <value>1</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="permite_operacao" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="((!isEmpty &amp;&amp; return &gt;= 1) || (isEmpty &amp;&amp; return = 0)) &amp;&amp; permite_operacao">
+      <Parameters>
+        <Parameter name="isEmpty" />
+        <Parameter name="return" />
+        <Parameter name="isEmpty" />
+        <Parameter name="return" />
+        <Parameter name="permite_operacao" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>true</Value>
+      <Value>0</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>false</Value>
+      <Value>1</Value>
+      <Value>true</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>isEmpty</Value>
+    <Value>return</Value>
+    <Value>permite_operacao</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.024</ExecutionTime>
+    <MaxDomainSize>2</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>6</TotalNoOfCombination>
+    <TotalNoOfTests>2</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
