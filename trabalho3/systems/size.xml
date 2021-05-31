@@ -17,25 +17,16 @@
       <basechoices />
       <invalidValues />
     </Parameter>
-    <Parameter id="3" name="permite_operacao" type="2">
-      <values>
-        <value>true</value>
-        <value>false</value>
-      </values>
-      <basechoices />
-      <invalidValues />
-    </Parameter>
   </Parameters>
   <OutputParameters />
   <Relations />
   <Constraints>
-    <Constraint text="((!isEmpty &amp;&amp; return &gt;= 1) || (isEmpty &amp;&amp; return = 0)) &amp;&amp; permite_operacao">
+    <Constraint text="((!isEmpty &amp;&amp; return &gt;= 1) || (isEmpty &amp;&amp; return = 0))">
       <Parameters>
         <Parameter name="isEmpty" />
         <Parameter name="return" />
         <Parameter name="isEmpty" />
         <Parameter name="return" />
-        <Parameter name="permite_operacao" />
       </Parameters>
     </Constraint>
   </Constraints>
@@ -44,26 +35,23 @@
       <Value>1</Value>
       <Value>true</Value>
       <Value>0</Value>
-      <Value>true</Value>
     </Testcase>
     <Testcase TCNo="1">
       <Value>2</Value>
       <Value>false</Value>
       <Value>1</Value>
-      <Value>true</Value>
     </Testcase>
   </Testset>
   <Header>
     <Value />
     <Value>isEmpty</Value>
     <Value>return</Value>
-    <Value>permite_operacao</Value>
   </Header>
   <Stat-Data>
-    <ExecutionTime>0.024</ExecutionTime>
+    <ExecutionTime>0.322</ExecutionTime>
     <MaxDomainSize>2</MaxDomainSize>
     <MinDomainSize>2</MinDomainSize>
-    <TotalNoOfCombination>6</TotalNoOfCombination>
+    <TotalNoOfCombination>2</TotalNoOfCombination>
     <TotalNoOfTests>2</TotalNoOfTests>
     <Algorithm>IPOG</Algorithm>
   </Stat-Data>

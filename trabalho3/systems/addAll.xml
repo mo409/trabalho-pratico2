@@ -20,12 +20,6 @@
   </Parameters>
   <OutputParameters />
   <Relations />
-  <Constraints>
-    <Constraint text="!permite_operacao">
-      <Parameters>
-        <Parameter name="permite_operacao" />
-      </Parameters>
-    </Constraint>
-  </Constraints>
+  <Constraints />
 </System>
 

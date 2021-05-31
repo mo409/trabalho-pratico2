@@ -20,37 +20,6 @@
   </Parameters>
   <OutputParameters />
   <Relations />
-  <Constraints>
-    <Constraint text="!permite_operacao">
-      <Parameters>
-        <Parameter name="permite_operacao" />
-      </Parameters>
-    </Constraint>
-  </Constraints>
-  <Testset doi="2">
-    <Testcase TCNo="0">
-      <Value>1</Value>
-      <Value>true</Value>
-      <Value>false</Value>
-    </Testcase>
-    <Testcase TCNo="1">
-      <Value>2</Value>
-      <Value>false</Value>
-      <Value>false</Value>
-    </Testcase>
-  </Testset>
-  <Header>
-    <Value />
-    <Value>predicate</Value>
-    <Value>permite_operacao</Value>
-  </Header>
-  <Stat-Data>
-    <ExecutionTime>0.007</ExecutionTime>
-    <MaxDomainSize>2</MaxDomainSize>
-    <MinDomainSize>2</MinDomainSize>
-    <TotalNoOfCombination>2</TotalNoOfCombination>
-    <TotalNoOfTests>2</TotalNoOfTests>
-    <Algorithm>IPOG</Algorithm>
-  </Stat-Data>
+  <Constraints />
 </System>
 
